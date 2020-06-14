@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 let db = require("../models");
 
 module.exports = function (app) {
@@ -22,6 +21,7 @@ module.exports = function (app) {
       });
   });
 
+//   route to populate the stats page
   app.get("/api/workouts/range", function (req, res) {
     db.Workout.find()
       .then((data) => {
@@ -32,14 +32,15 @@ module.exports = function (app) {
       });
   });
 
-  app.post("/api/workouts/range", function (req, res) {
-    db.Workout.create({})
-      .then((data) => res.json(data))
-      .catch((err) => {
-        res.json(err);
-      });
-  });
+//   app.post("/api/workouts/range", function (req, res) {
+//     db.Workout.create({})
+//       .then((data) => res.json(data))
+//       .catch((err) => {
+//         res.json(err);
+//       });
+//   });
 
+//   for adding an excercise to a workout. Is an update as it pushes an excercise to the excersises array
   app.put("/api/workouts/:id", ({ body, params }, res) => {
     db.Workout.findByIdAndUpdate(
       params.id,
