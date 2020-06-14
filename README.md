@@ -12,7 +12,7 @@ This application can be used for a user to view, create and track daily workouts
 - Tests
 
 ## Installation
-There is an instance of this server running on a heroku server - it can be found at: [Note-Taker](https://note-taker331.herokuapp.com/) (Workouts will be saved in this instance of the heroku server)
+There is an instance of this server running on a heroku server - it can be found at: [Workout-Tracker](https://workout-tracker331.herokuapp.com/) (Workouts will be saved in this instance of the heroku server)
 
 If looking to run server on a local host
 - Install dependencies with ‘npm i’ on your terminal in the repo’s directory
