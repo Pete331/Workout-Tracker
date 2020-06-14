@@ -15,11 +15,15 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost/workout", {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true
-});
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
+
+mongoose.connect(MONGODB_URI)
+
+// mongoose.connect("mongodb://localhost/workout", {
+//   useNewUrlParser: true,
+//   useFindAndModify: false,
+//   useUnifiedTopology: true
+// });
 
 // Import routes and give the server access to them.
 require("./routes/api-routes.js")(app);
