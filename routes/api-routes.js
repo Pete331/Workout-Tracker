@@ -32,14 +32,6 @@ module.exports = function (app) {
       });
   });
 
-//   app.post("/api/workouts/range", function (req, res) {
-//     db.Workout.create({})
-//       .then((data) => res.json(data))
-//       .catch((err) => {
-//         res.json(err);
-//       });
-//   });
-
 //   for adding an excercise to a workout. Is an update as it pushes an excercise to the excersises array
   app.put("/api/workouts/:id", ({ body, params }, res) => {
     db.Workout.findByIdAndUpdate(
