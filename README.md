@@ -1,5 +1,5 @@
 # Workout Tracker
-This application can be used for a user to view, create and track daily workouts. They can log multiple exercises in a workout on a given day. They can track the name, type, weight, sets, reps, and duration of the exercise they input - If the they select a cardio exercise, it will track their distance traveled instead.
+This application can be used for a user to view, create and track daily workouts. They can log multiple exercises in a workout on a given day. They can track the name, type, weight, sets, reps, and duration of the exercise they input - If the they select a cardio exercise, it will track their distance traveled instead. The Data is stored using MongoDB with models being created with mongoose.    
 ![GitHub last commit](https://img.shields.io/github/last-commit/Pete331/Workout-Tracker)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/Pete331/Workout-Tracker)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Pete331/Workout-Tracker)
